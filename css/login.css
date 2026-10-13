@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px;
+    background: rgb(187, 187, 187);
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #00bcd4;
+}
+
+.container {
+    min-height: 88vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+     background-image: url("../img/fondo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% auto;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 420px;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 30px;
+}
+
+.logo span {
+    color: #667eea;
+}
+
+.form h1 {
+    text-align: center;
+    font-size: 28px;
+    color: #222;
+    margin-bottom: 8px;
+}
+
+.form__formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.subtitle {
+    text-align: center;
+    color: #777;
+    margin-bottom: 30px;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;
+    flex-wrap: nowrap;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 13px 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    outline: none;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.input-group input:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.15);
+}
+
+.input-group input::placeholder {
+    color: #aaa;
+}
+
+button {
+    width: 100%;
+    padding: 1em;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #776eea, #667eea);
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 20px rgba(102, 126, 234, 0.35);
+    }
+
+    &:active {
+        transform: translateY(0);
+    }
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.login-form {
+    display: block;
+}
+
+.registro-form {
+    display: none;
+}
+
+#registro:checked~.login-form {
+    display: none;
+}
+
+#registro:checked~.registro-form {
+    display: block;
+}

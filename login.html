@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/login.css">
+</head>
+
+<body>
+    <header>
+        <a href="/index.html" class="menu__logo"><img src="./img/Logo.png" alt="Imagen del logo" height="75"
+                width="100"></a>
+        <nav class="menu__secciones">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <input type="radio" name="form" id="login" checked>
+        <input type="radio" name="form" id="registro">
+        <div class="login-form">
+            <section class="card">
+                <div class="logo">
+                    <span>Mi</span> Cuenta
+                </div>
+                <form class="form">
+                    <h1>Iniciar sesion</h1>
+                    <p class="subtitle">Acceder a tu cuenta</p>
+                    <div class="input-group">
+                        <label for="login-email">Mail</label>
+                        <input type="email" id="login-email" placeholder="tu@email.com" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="login-password">Comtraseña</label>
+                        <input type="password" id="login-password" placeholder="*********"required>
+                    </div>
+                    <div class="options">
+                        <label>
+                            <input type="checkbox">
+                            Recordarme
+                        </label>
+                        <a href="#">¿Olvidaste tu contraseña?</a>
+                    </div>
+                    <a href="/reserva.html">
+                        <button type="button">Iniciar sesión</button>
+                    </a>
+                    <p class="change-form">
+                        ¿No tienes cuenta?
+                        <label for="registro">Crear Usuario</a>
+                    </p>
+                </form>
+            </section>
+        </div>
+        <div class="registro-form">
+            <input type="radio" name="form" id="login" checked>
+            <input type="radio" name="form" id="registro">
+            <div class="login-form">
+                <section class="card">
+                    <div class="logo">
+                        <span>Mi</span> Cuenta
+                    </div>
+                    <form class="form">
+                        <h1>Iniciar sesion</h1>
+                        <p class="subtitle">Crea tu cuenta</p>
+                        <div class="form__formulario">
+                            <section>
+                                <div class="input-group">
+                                    <label for="login-email">Mail</label>
+                                    <input type="email" id="login-email" placeholder="tu@email.com" required>
+                                </div>
+                                <div class="input-group">
+                                    <label for="login-password">Correo</label>
+                                    <input type="password" id="login-password" placeholder="*********" required>
+                                </div>
+                            </section>
+                            <section>
+
+                                <div class="input-group">
+                                    <label for="login-nombre">Nombre</label>
+                                    <input type="password" id="login-nombre" placeholder="Paco" required>
+                                </div>
+                                <div class="input-group">
+                                    <label for="login-apellido">Apellido</label>
+                                    <input type="password" id="login-apellido" placeholder="Perez Rufian" required>
+                                </div>
+                            </section>
+                            <section>
+                                <div class="input-group">
+                                    <label for="login-direccion">Direccion</label>
+                                    <input type="password" id="login-direccion" placeholder="C/ Piruleta 10 9º B" required>
+                                </div>
+                                <div class="input-group">
+                                    <label for="login-telefono">Telefono</label>
+                                    <input type="password" id="login-telefono" placeholder="123456789" required>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="options">
+                            <label>
+                                <input type="checkbox">
+                                Recordarme
+                            </label>
+                            <a href="#">¿Olvidaste tu contraseña?</a>
+                        </div>
+                        <button type="button">Crear Cuenta</button>
+                        <p class="change-form">
+                            ¿Tienes cuenta?
+                            <label for="login">Log in</a>
+                        </p>
+                    </form>
+                </section>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>

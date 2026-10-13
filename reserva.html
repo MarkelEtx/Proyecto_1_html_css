@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reserva.css">
+</head>
+
+<body>
+    <header>
+        <a href="/index.html" class="menu__logo"><img src="./img/Logo.png" alt="Imagen del logo" height="75"
+                width="100"></a>
+        <nav class="menu__secciones">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="sections">
+            <section class="section__izq">
+                <div class="login-form">
+                    <section class="card">
+                        <form class="form">
+                            <h1>Últimos ajustes</h1>
+                            <div class="input-group">
+                                <label for="personas">Nº Personas:</label>
+                                <input type="number" id="personas" placeholder="Nº personas" min="1" required>
+                            </div>
+                            <div class="input-group">
+                                <label for="desde">Desde:</label>
+                                <input type="date" id="desde" required>
+                            </div>
+                            <div class="input-group">
+                                <label for="hasta">Hasta:</label>
+                                <input type="date" id="hasta" required>
+                            </div>
+                           
+                            <label for="solicitar" class="button">
+                                Solicitar Reserva
+                            </label>
+                        </form>
+                    </section>
+                </div>
+
+            </section>
+            <hr>
+            <section class="section__der">
+                <input type="checkbox" id="solicitar">
+                <h1>
+                    <span class="en_curso">Tramite en curso</span>
+                    <span class="solicitado">Pedido solicitado</span>
+                </h1>
+                <h2>Estado de solicitud</h2>
+                <span class="estado pendiente">Pendiente</span>
+                <span class="estado completado">Pedido solicitado</span>
+
+                <p class="descripcion">
+                    Tu solicitud está pendiente de confirmación.
+                </p>
+                <p class="descripcion nueva">
+                    Tu reserva se ha solicitado correctamente.
+                </p>
+
+            </section>
+        </div>
+    </main>
+
+</body>
+
+</html>
